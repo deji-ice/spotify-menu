@@ -1,13 +1,8 @@
 "use client"
 import Image from "next/image";
 
-import React, { useEffect } from "react";
 
 export default function ArtistCard({ index, image, name }) {
-  useEffect(() => {
-    console.log(name, image);
-
-  }, [name]);
   return (
     <section className="mt-[2rem] flex flex-col items-start">
       <div className="flex justify-center">

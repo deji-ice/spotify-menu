@@ -2,15 +2,10 @@
 "use client";
 import {
   SpotifySignInButton,
-  SpotifySignOut,
 } from "@/components/SpotifySignInButton";
-import List from "@/components/List";
-import Spotify from "next-auth/providers/spotify";
-import { getProviders, useSession } from "next-auth/react";
+import {useSession } from "next-auth/react";
 
-import Link from "next/link";
-
-export default function Login({ providers }) {
+export default function Login() {
   const { data: session } = useSession();
   return (
     <section className="flex h-screen ">
@@ -27,13 +22,3 @@ export default function Login({ providers }) {
     </section>
   );
 }
-
-export const getServerSideProps = async () => {
-  const providers = await getProviders();
-  console.log(providers);
-  return {
-    props: {
-      providers,
-    },
-  };
-};
