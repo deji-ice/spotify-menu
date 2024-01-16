@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { MoreCircle, dropdown, next } from "@/public/assets/svg";
+import { next } from "@/public/assets/svg";
 import SectionHeading from "./sectionHeading";
 import Link from "next/link";
 import { useSession } from "next-auth/react";
