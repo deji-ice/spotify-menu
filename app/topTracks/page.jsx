@@ -1,7 +1,5 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { next } from "@/public/assets/svg";
-import SongCard from "@/components/SongCard";
 import SectionHeading from "@/components/sectionHeading";
 import SongCardList from "@/components/SongCardList";
 import { useSession } from "next-auth/react";

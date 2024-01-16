@@ -1,7 +1,5 @@
 "use client";
-import ArtistCard from "@/components/ArtistCard";
 import ArtistCardList from "@/components/ArtistCardList";
-import Profile from "@/components/profile";
 import SectionHeading from "@/components/sectionHeading";
 import useSpotify from "@/hooks/useSpotify";
 import { useSession } from "next-auth/react";
@@ -21,7 +19,6 @@ export default function TopArtists({ str }) {
         .getMyTopArtists({ time_range: range.range })
         .then((data) => {
           setArtists(data.body.items);
-          console.log(data, "page");
         })
         .catch((err) => {
           return err;
