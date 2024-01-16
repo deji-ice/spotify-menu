@@ -5,7 +5,8 @@ import SectionHeading from "./sectionHeading";
 import Link from "next/link";
 import { useSession } from "next-auth/react";
 import useSpotify from "@/hooks/useSpotify";
-import ArtistCard from "@/components/ArtistCard";
+import ArtistCard from "./artistCard";
+
 
 export default function TopArtists() {
   const spotifyApi = useSpotify();
